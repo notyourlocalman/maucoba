@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Untuk Kamu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,600;9..144,700&family=Lora:ital,wght@0,400;0,500;1,400&family=Caveat:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grain"></div>
+
+<div class="float-doodle sun" aria-hidden="true">
+  <svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="18"/><g stroke-width="3"><line x1="50" y1="10" x2="50" y2="22"/><line x1="50" y1="78" x2="50" y2="90"/><line x1="10" y1="50" x2="22" y2="50"/><line x1="78" y1="50" x2="90" y2="50"/><line x1="21" y1="21" x2="29" y2="29"/><line x1="71" y1="71" x2="79" y2="79"/><line x1="21" y1="79" x2="29" y2="71"/><line x1="71" y1="29" x2="79" y2="21"/></g></svg>
+</div>
+<div class="float-doodle squiggle" aria-hidden="true">
+  <svg viewBox="0 0 160 40"><path d="M5 30 Q 25 5, 45 30 T 85 30 T 125 30 T 155 30"/></svg>
+</div>
+
+<section class="envelope-stage" id="stage">
+  <div class="envelope" id="envelope">
+    <div class="envelope-shadow"></div>
+    <div class="envelope-back">
+      <p class="to-line">Untuk <span data-edit="nama">Kamu</span></p>
+      <p class="stamp-note">jangan dibuka sembarangan</p>
+    </div>
+    <div class="flap"></div>
+    <button class="seal" id="seal" aria-label="Buka amplop">
+      <svg viewBox="0 0 60 60"><path d="M30 8 C20 -2 4 10 4 26 C4 42 30 56 30 56 C30 56 56 42 56 26 C56 10 40 -2 30 8 Z"/></svg>
+    </button>
+  </div>
+  <p class="hint">tekan segelnya</p>
+</section>
+
+<main class="letter" id="letter">
+
+  <header class="letter-head reveal">
+    <p class="date">ditulis diam-diam, suatu sore</p>
+    <h1>Hai, <span data-edit="nama">kamu</span>.</h1>
+    <p class="lede">ada sesuatu yang udah lama aku simpen, dan kayaknya hari ini aku cukup berani buat nulisnya.</p>
+  </header>
+
+  <section class="para reveal">
+    <p>aku nggak tau persisnya kapan mulainya. mungkin dari hal kecil yang sebenernya nggak penting &mdash; cara kamu ketawa kalau ngomong sesuatu yang menurut kamu lucu padahal nggak ada yang lain ikut ketawa, atau gimana kamu selalu jawab pesan orang lebih dulu sebelum jawab punya sendiri.</p>
+  </section>
+
+  <section class="para alt reveal">
+    <p>aku notice hal-hal kecil tentang kamu yang mungkin kamu sendiri nggak sadar. cara kamu cerita sesuatu sampai lupa napas. caranya kamu peduli ke orang lain padahal capek sendiri. it's a lot of small things, dan entah kenapa semuanya nempel.</p>
+  </section>
+
+  <section class="para reveal">
+    <p>aku nggak pernah niat nyimpen ini selama ini. awalnya kupikir cuma fase, bakal ilang sendiri. tapi makin hari malah makin jelas &mdash; that this isn't just a phase, kamu emang beda buat aku.</p>
+  </section>
+
+  <section class="para alt reveal">
+    <p>jujur, nulis ini lebih susah dari yang aku kira. ada beberapa kali aku mau bilang langsung terus batal di detik terakhir. jadi mungkin ini caraku yang agak muter, tapi at least ini jujur.</p>
+  </section>
+
+  <section class="confession reveal" id="confessionSection">
+    <p class="ps-label">P.S. &mdash; ada amplop kecil lagi di bawah ini</p>
+    <button class="mini-envelope" id="miniEnvelope">
+      <span class="mini-front">buka kalau kamu berani</span>
+    </button>
+    <div class="confession-text" id="confessionText" hidden>
+      <p>aku suka kamu, <span data-edit="nama">kamu</span>.</p>
+      <p class="small">nggak nuntut apa-apa balik. cuma pengen kamu tau, karena rasanya capek juga nyimpen sendirian.</p>
+    </div>
+  </section>
+
+  <footer class="signature reveal">
+    <p class="signoff">dengan jujur, dan sedikit deg-degan,</p>
+    <p class="name-handwritten" data-edit="pengirim">seseorang yang udah lama merhatiin kamu</p>
+  </footer>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
